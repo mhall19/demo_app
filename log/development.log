@@ -1608,3 +1608,123 @@ Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2012-06-14 20:03:25 -0500
 Served asset /microposts.js - 304 Not Modified (0ms)
 Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-06-14 20:42:47 -0500
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/microposts" for 127.0.0.1 at 2012-06-14 20:42:51 -0500
+
+SyntaxError (/home/parallels/rails_projects/demo_app/app/controllers/microposts_controller.rb:5: syntax error, unexpected keyword_end):
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `constantize'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__3571004303988514970__call__4267731174453559194__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-06-14 20:53:19 -0500
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/microposts" for 127.0.0.1 at 2012-06-14 20:53:23 -0500
+Processing by MicropostsController#index as HTML
+  [1m[36mMicropost Load (0.1ms)[0m  [1mSELECT "microposts".* FROM "microposts" [0m
+  Rendered microposts/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 128ms (Views: 76.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-14 20:53:23 -0500
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-14 20:53:23 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-14 20:53:23 -0500
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2012-06-14 20:53:23 -0500
+Served asset /microposts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-14 20:53:23 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-14 20:53:23 -0500
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2012-06-14 20:53:23 -0500
+Served asset /microposts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-14 20:53:23 -0500
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-14 20:53:23 -0500
+Served asset /users.js - 304 Not Modified (1ms)
